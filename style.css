@@ -3,6 +3,9 @@ html{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 12px;
 }
+a{
+    text-decoration: none;
+}
 body{
     background-color: #FAFAFA;
 }
@@ -95,7 +98,7 @@ section,aside{
     flex-direction: column;
     align-items: center;
     max-width:90%;
-    height:150vh;
+    height:120vh;
 }
 .name h1{
     margin-right:20%;
@@ -117,4 +120,134 @@ figcaption{
 font-size: 1.4em;
 color:#666;
 font-family: nyt-imperial,georgia,'times new roman',times,serif;
+}
+.article__heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:20vh;
+    margin:0 auto;
+} .article__heading h5{
+    font-size: 1.4em;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    margin-bottom: 0.7%;
+    margin-right: 25%;
+}
+.article__heading--bottom{
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.article__heading--bottom p{
+    color: #666;
+    font-family:serif;
+    font-size: 1em;
+    width:30%;
+
+}
+.share{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+i{
+    font-size: 1.7rem;
+    margin:0 10%;
+}
+.article__text{
+    margin:0 auto;
+    width:45%;
+    font-size: 2rem;
+}
+.article{
+    margin:0;
+    height:200vh;
+}
+.article__text p{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color:#333;
+}
+.quote{
+    width:60%;
+    margin:0 auto;
+}
+blockquote{
+    text-align: center;
+    position: relative;
+    font-size: 1.4rem;
+}
+blockquote::before{
+    content:"";
+    display: block;
+    margin:5% auto;
+    width:30%;
+    height:1px;
+    background-color: gray;
+}
+blockquote::after{
+    content:"";
+    display: block;
+    margin:5% auto;
+    width:30%;
+    height:1px;
+    background-color: gray;
+}
+.theory h5{
+    font-size: 1.5em;
+}
+.theory{
+    width:75%;
+    margin:0 auto;
+}
+.theory p{
+    font-size: 1.3em;
+}
+.flex-container{
+    height:100vh;
+    width:100%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url(https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 20%;
+}
+.flex-item {
+    width:23%;
+    font-size: 0.9em;
+    margin-top: 15%;
+    padding: 0 1%;
+}
+.flex-container::after{
+    content:"";
+    display: block;
+    width:7%;
+    height:1px;
+    background-color: gray;
+    margin-left: 0.5%;
+}
+#author{
+    margin-top: 3%;
+    margin-left: 0.5%;
+    font-size: 1.2em;
+}
+
+iframe{
+    margin:0 auto;
+}
+.video{
+    font-size: 0.7em;
+}
+.article__text img{
+    width:100%;
+}
+.article__text figcaption{
+    font-size: 0.7em;
 }
